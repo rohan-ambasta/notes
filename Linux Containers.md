@@ -38,13 +38,13 @@ Linux Containers (LXC), provide a fast and lightweight mechanism to create Linux
 1. Make sure yout have bridge-utils
   * `$ sudo apt-get install bridge-utils`
 2. Edit your /etc/network/interfaces and disable eth0 by setting it to manual. Add it to br0 by adding a new br0 section and listing eth0 in bridge-ifaces and bridge-ports.
-  * `auto br0  
+  * auto br0  
 iface br0 inet dhcp  
     bridge-ifaces eth0  
     bridge-ports eth0  
     up ifconfig eth0 up  
 
-    iface eth0 inet manual`
+    iface eth0 inet manual
 
 3. `$ sudo ifup br0`
 
