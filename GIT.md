@@ -16,3 +16,5 @@ The git prompt utility provides a command line prompt with current git branch an
   `export GIT_PS1_SHOWUNTRACKEDFILES=true`    
     
 `export PS1='\[\033[38m\]\u@\H\[\033[00m\]:\[\033[32m\]\w\[\033[33m\]$(__git_ps1)\[\033[31m\] [\j] [\!]\[\033[00m\]$ '`
+
+https://github.com/git/git/blob/master/contrib/completion/git-prompt.sh
